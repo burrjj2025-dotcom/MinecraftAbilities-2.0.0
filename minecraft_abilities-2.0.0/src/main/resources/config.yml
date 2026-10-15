@@ -1,0 +1,31 @@
+# Minecraft Abilities defaults. Live ability states/levels and Xray choices are saved per player.
+# Player files are stored in plugins/MinecraftAbilities/players/<UUID>_<PlayerName>.yml.
+abilities:
+  speedmine: { enabled: false, level: 1 }
+  jumpboost: { enabled: false, level: 1 }
+  invis: { enabled: false, level: 1 }
+  speed: { enabled: false, level: 1 }
+  strength: { enabled: false, level: 1 }
+  night_vision: { enabled: false, level: 1 }
+  resistance: { enabled: false, level: 1 }
+  fireres: { enabled: false, level: 1 }
+  levitation: { enabled: false, level: 1 }
+  may_fly: { enabled: false, level: 1 }
+  xray: { enabled: false, level: 1 }
+xray:
+  # Default scan radius in blocks (1-8). Each player's value is saved separately.
+  view-radius: 6
+  # Default radius kept visible around the player's body (1-3). Larger is safer but less effective.
+  safe-radius: 2
+  # Shared server performance setting; changing it affects all players.
+  update-period-ticks: 4
+  # Default hidden-block choices for new player files. Players can customize their own list.
+  hidden-blocks:
+    STONE: true
+    GRAVEL: true
+    DIRT: true
+    GRASS_BLOCK: true
+    DIORITE: true
+    GRANITE: true
+    DEEPSLATE: true
+    TUFF: true

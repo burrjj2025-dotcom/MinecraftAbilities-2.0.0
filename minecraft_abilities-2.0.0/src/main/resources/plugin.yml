@@ -1,0 +1,19 @@
+name: MinecraftAbilities
+version: 2.0.0
+main: me.jjonlinux.minecraftabilities.MinecraftAbilities
+api-version: '1.20.5'
+author: JJonLinux
+description: Server-side configurable player abilities.
+commands:
+  abilities:
+    description: Opens the Minecraft Abilities GUI.
+    usage: /abilities
+    permission: minecraftabilities.use
+  ability:
+    description: Toggles and configures an ability.
+    usage: /ability <name> [level]
+    permission: minecraftabilities.use
+permissions:
+  minecraftabilities.use:
+    description: Allows use of Minecraft Abilities.
+    default: true
